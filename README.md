@@ -75,7 +75,8 @@ npm run start:http
 | mcp_yapi_get_interface | interface_id | 查询接口详情 |
 
 
-启动:
+## 启动:
+```
 docker build -t yapi-mcp-server .
 docker stop yapi-mcp
 docker rm yapi-mcp
@@ -84,8 +85,10 @@ docker run -d --name yapi-mcp \
   -e YAPI_BASE_URL=http://yapi.dev.com \
   yapi-mcp-server
 docker logs -f yapi-mcp
+```
 
-trae配置:
+## trae配置:
+```
 {
   "mcpServers": {
     "yapi": {
@@ -96,3 +99,4 @@ trae配置:
     }
   }
 }
+```
